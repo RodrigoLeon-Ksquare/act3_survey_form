@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <form>
+      <div class="formElement">
+        <label for="firstName">1. Insert your full name</label>
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          placeholder="Rodrigo León Reyes"
+        />
+      </div>
+
+      <div class="formElement">
+        <label for="email">2. Insert your email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@email.com"
+        />
+      </div>
+
+      <div class="formElement">
+        <label for="hours"
+          >3. How many hours for the day do you speend playing
+          videogames?</label
+        >
+        <input
+          type="number"
+          name="hours"
+          id="hours"
+          min="1"
+          max="24"
+          placeholder="1"
+        />
+      </div>
+
+      <div class="formElement">
+        <label for="console"
+          >4. What is your favorite console for video games?</label
+        >
+        <select id="console" name="console">
+          <option>Nintendo Switch</option>
+          <option>PlayStation 5</option>
+          <option>Xbox Series X</option>
+          <option>Another</option>
+        </select>
+      </div>
+
+      <div class="formElement">
+        <legend>5. Choose your favorite type of video game</legend>
+        <ul>
+          <li>
+            <label for="action">Action</label>
+            <input type="radio" id="action" name="videogame" value="action" />
+          </li>
+
+          <li>
+            <label for="shooter">Shooter</label>
+            <input type="radio" id="shooter" name="videogame" value="shooter" />
+          </li>
+
+          <li>
+            <label for="sports">Sports</label>
+            <input type="radio" id="sports" name="videogame" value="sports" />
+          </li>
+        </ul>
+      </div>
+
+      <div class="formElement">
+        <label>6. Comments</label>
+        <textarea
+          name="comment"
+          id="textarea"
+          cols="30"
+          rows="30"
+          placeholder="Please leave a comment"
+        ></textarea>
+      </div>
+
+      <div class="formElement">
+        <label for="box"
+          >7. Mark the box if you want to take another survey later</label
+        >
+        <input type="checkbox" id="box" name="box" value="box" />
+      </div>
+    </form>
+  </body>
+</html>
